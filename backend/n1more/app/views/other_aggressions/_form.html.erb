@@ -1,0 +1,32 @@
+<%= form_with(model: other_aggression, local: true) do |form| %>
+  <% if other_aggression.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(other_aggression.errors.count, "error") %> prohibited this other_aggression from being saved:</h2>
+
+      <ul>
+      <% other_aggression.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :aggression_detail_id %>
+    <%= form.text_field :aggression_detail_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

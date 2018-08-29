@@ -1,0 +1,9 @@
+<h1>StaticPages#landing</h1>
+<p>Find me in app/views/static_pages/landing.html.erb</p>
+
+<% if user_signed_in? %>
+    <h3>Bienvenido! <%= current_user.email %> </h3>
+<% else %>
+    <p> por favor inicia sesión para continuar </p>
+<% end %>
+

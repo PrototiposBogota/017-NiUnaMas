@@ -1,0 +1,2 @@
+module AggressionDetailsHelper
+end

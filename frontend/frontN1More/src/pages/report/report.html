@@ -1,0 +1,192 @@
+<!--
+  Generated template for the ReportPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+        </button>
+
+        <ion-buttons start>
+            <button ion-button icon-left (click)="prev()"><ion-icon name="arrow-back"></ion-icon> Prev</button>
+        </ion-buttons>
+
+        <ion-buttons end>
+            <button ion-button icon-right (click)="next()">Next <ion-icon name="arrow-forward"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+    <ion-slides #reportSlider>
+        <ion-slide>
+            <ion-card>
+                <ion-card-header>
+                    Documenta lo que te sucede
+                </ion-card-header>
+                <ion-card-content text-justify>
+                    
+                    Las primeras señales de violencia contra ti no necesariamente son alarmantes ó dramaticas.
+                    
+                               
+                </ion-card-content>
+                <ion-card-content text-justify>
+                    
+                    Pero si llevas un registro de los incidentes de abuso o violencia que has vivido, desde el más pequeño, puedes identificar mejor las señales de alerta.
+                    
+                </ion-card-content>
+                <ion-card-content text-justify>
+                    Así podrás dar los primeros pasos para protegerte y estar preparada si decides buscar asesoria legal. Especialmente si ha sucedido en un lugar privado (sin testigos) o se ha repetido en distintas formas.
+                </ion-card-content>
+            </ion-card>
+
+        </ion-slide>
+
+        <ion-slide>
+            <p *ngIf="submitAttempt" style="color: #ea6153;">Please fill out all details accurately.</p>
+
+            <ion-list no-lines>
+
+                <form [formGroup]="slideOneForm">
+
+                    <ion-item>
+                        <ion-label color="primary" stacked>Nombre de quién te agredió</ion-label>
+                        <ion-input placeholder="si no lo sabes, escribe NN" formControlName="p_name" type="text"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label color="primary"> Su edad</ion-label>
+                        <ion-input formControlName="p_age" type="number"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label color="primary" floating>Su género</ion-label>
+
+                        <ion-select formControlName="p_gender">
+                            <ion-option value="Femenino" checked="true">Femenino</ion-option>
+                            <ion-option value="Masculino">Masculino</ion-option>
+                            <ion-option value="Transgénero">Transgénero</ion-option>
+                            <ion-option value="Intergénero">Intergénero</ion-option>
+                            <ion-option value="Otro">Otro</ion-option>
+                        </ion-select>
+
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" floating>Su parentezco contigo</ion-label>
+                        <ion-select formControlName="p_relationship">
+                            <ion-option value="Padre" checked="true">Padre</ion-option>
+                            <ion-option value="Madre">Madre</ion-option>
+                            <ion-option value="Pareja">Pareja</ion-option>
+                            <ion-option value="Ex-Pareja">Ex-pareja</ion-option>
+                            <ion-option value="Familiar">Familiar</ion-option>
+                            <ion-option value="Profesor(a)">Profesor</ion-option>
+                            <ion-option value="Amigo(a)">Amigo</ion-option>
+                            <ion-option value="Compañero(a) de trabajo">Compañero(a) de trabajo</ion-option>
+                            <ion-option value="Compañero(a) de estudio">Compañero(a) de estudio</ion-option>
+                            <ion-option value="Vecino(a)">Vecino(a)</ion-option>
+                            <ion-option value="Jefe(a)">Jefe(a)</ion-option>
+                            <ion-option value="Sacerdote/pastor">Sacerdote / Pastor</ion-option>
+                            <ion-option value="Servidor(a) público(a)">Servidor(a) Público(a)</ion-option>
+                        </ion-select>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label color="primary" floating>Viven juntos?</ion-label>
+                        <ion-select formControlName="p_live_together">
+                            <ion-option value="true" checked="true">Si</ion-option>
+                            <ion-option value="false">No</ion-option>
+
+                        </ion-select>
+                    </ion-item>
+
+                </form>
+
+            </ion-list>
+
+        </ion-slide>
+
+        <ion-slide>
+            <br />
+            <ion-list no-lines>
+
+                <form [formGroup]="slideTwoForm">
+
+                    <ion-item>
+                        <ion-label color="primary" floating>Qué día te agredieron?</ion-label>
+                        <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="aggression_date" [ngModelOptions]="{standalone: true}"></ion-datetime>
+
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" floating>A que hora sucedio?</ion-label>
+                        <ion-datetime displayFormat="hh:mm A" [(ngModel)]="aggression_time" [ngModelOptions]="{standalone: true}"></ion-datetime>
+
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" floating>En que lugar sucedio?</ion-label>
+                        <ion-select formControlName="aggression_sexual">
+                            <ion-option value="Via publica" checked="true">Via publica</ion-option>
+                            <ion-option value="Vivienda">Vivienda</ion-option>
+                            <ion-option value="Centro educativo">Centro educativo</ion-option>
+                            <ion-option value="Oficina o edificio de oficinas">Oficina o edificio de oficinas</ion-option>
+                            <ion-option value="Establecimiento comercial">Establecimiento comercial</ion-option>
+                            <ion-option value="Espacios al aire libre">Espacios al aire libre</ion-option>
+                            <ion-option value="Otros lugares">Otros lugares</ion-option>
+                        </ion-select>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label color="primary" floating>Te agredieron sexualmente?, de qué forma?</ion-label>
+                        <ion-select formControlName="aggression_sexual">
+                            <ion-option value="Abuso sexual" checked="true">Abuso sexual</ion-option>
+                            <ion-option value="Acoso sexual">Acoso Sexual</ion-option>
+                            <ion-option value="Violación">Violación</ion-option>
+                            <ion-option value="Explotación sexual comercial de niños niñas y adolescentes">Explotación sexual comercial de niños niñas y adolescentes</ion-option>
+                            <ion-option value="Trata de personas con fines de explotación sexual">Trata de personas con fines de explotación sexual</ion-option>
+                            <ion-option value="Actos sexuales con el uso de la fuerza">Actos sexuales con el uso de la fuerza</ion-option>
+                            <ion-option value="Otros actos sexuales desnudez, esterilización, planificación forzada, mutilación">Otros actos sexuales desnudez, esterilización, planificación forzada, mutilación</ion-option>
+                        </ion-select>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label floating color="primary">De qué otra forma te agredieron?</ion-label>
+                        <ion-select formControlName="aggression">
+                            <ion-option value="Agresión física" checked="true">Agresión física</ion-option>
+                            <ion-option value="Maltrato psicológico">Maltrato psicológico</ion-option>
+                            <ion-option value="Negligencia y abandono">Negligencia y abandono</ion-option>
+
+                        </ion-select>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label floating color="primary">Mecanismo utilizado para la agresion</ion-label>
+                        <ion-select formControlName="mechanism">
+                            <ion-option value="Ahorcamiento/ entrangulamiento /sofocación" checked="true">Ahorcamiento/ entrangulamiento /sofocación</ion-option>
+                            <ion-option value="Caidas">Caidas</ion-option>
+                            <ion-option value="Contundente corto contundente">Contundente corto contundente</ion-option>
+                            <ion-option value="Cortante / cortopunzante/ punzante">Cortante / cortopunzante/ punzante</ion-option>
+                            <ion-option value="proyectil de arma de fuego">Proyectil de arma de fuego</ion-option>
+                            <ion-option value="Quemadura por fuego o llama">Quemadura por fuego o llama</ion-option>
+                            <ion-option value="Quemadura por álcalis, o sustancias corrosivas">Quemadura por álcalis, o sustancias corrosivas</ion-option>
+                            <ion-option value="Quemadura con liquido hirviente">Quemadura con liquido hirviente</ion-option>
+                            <ion-option value="Sustancias de uso domestico que causan irritación">Sustancias de uso domestico que causan irritación</ion-option>
+                            <ion-option value="Otros mecanismos">Otros mecanismos</ion-option>
+                        </ion-select>
+                    </ion-item>
+
+                </form>
+
+            </ion-list>
+
+            <button ion-button full color="primary" (click)="save()">Guardar reporte de Agresión</button>
+
+
+        </ion-slide>
+
+    </ion-slides>
+
+</ion-content>

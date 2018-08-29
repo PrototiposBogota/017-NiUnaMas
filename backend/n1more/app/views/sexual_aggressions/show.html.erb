@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aggression detail:</strong>
+  <%= @sexual_aggression.aggression_detail %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sexual_aggression.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sexual_aggression.description %>
+</p>
+
+<%= link_to 'Edit', edit_sexual_aggression_path(@sexual_aggression) %> |
+<%= link_to 'Back', sexual_aggressions_path %>

@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @victim.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @victim.surname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @victim.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @victim.password %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @victim.phone_number %>
+</p>
+
+<p>
+  <strong>Document type:</strong>
+  <%= @victim.document_type %>
+</p>
+
+<p>
+  <strong>Document number:</strong>
+  <%= @victim.document_number %>
+</p>
+
+<p>
+  <strong>Attendant name:</strong>
+  <%= @victim.attendant_name %>
+</p>
+
+<p>
+  <strong>Attendant phone number:</strong>
+  <%= @victim.attendant_phone_number %>
+</p>
+
+<p>
+  <strong>Sexual orientation:</strong>
+  <%= @victim.sexual_orientation %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @victim.district %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @victim.picture %>
+</p>
+
+<%= link_to 'Edit', edit_victim_path(@victim) %> |
+<%= link_to 'Back', victims_path %>

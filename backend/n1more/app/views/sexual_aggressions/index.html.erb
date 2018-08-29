@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sexual Aggressions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aggression detail</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sexual_aggressions.each do |sexual_aggression| %>
+      <tr>
+        <td><%= sexual_aggression.aggression_detail %></td>
+        <td><%= sexual_aggression.name %></td>
+        <td><%= sexual_aggression.description %></td>
+        <td><%= link_to 'Show', sexual_aggression %></td>
+        <td><%= link_to 'Edit', edit_sexual_aggression_path(sexual_aggression) %></td>
+        <td><%= link_to 'Destroy', sexual_aggression, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sexual Aggression', new_sexual_aggression_path %>

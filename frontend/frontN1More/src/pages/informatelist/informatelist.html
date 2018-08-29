@@ -1,0 +1,71 @@
+<ion-header>
+    <ion-navbar color='primary'>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Las Relaciones</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+    <ion-list>
+        
+        <ion-item>
+
+            <ion-card> 
+                <img src="assets/imgs/image1.jpg" />
+             
+                <ion-card-content>
+                    <ion-card-title>
+                        Que es el Noviazgo?
+                    </ion-card-title>
+
+                   <div class="cardcontent">
+                        El “noviazgo” significa diferentes cosas para diferentes personas, 
+                        particularmente entre generaciones. Hoy se define “noviazgo” como dos 
+                        personas que comparten una relación íntima.
+                    </div>
+                   
+                </ion-card-content>
+
+                <ion-row class="cardfooter"> 
+                    
+                    <div float-right>
+                        <button (click)="btnVermas(1)" ion-button clear end>
+                            VER MAS
+                       </button>
+                    </div> 
+                   
+                </ion-row>
+            </ion-card>
+
+        </ion-item>
+
+        
+        <ion-item>
+            <ion-card>
+                <img src="assets/imgs/image2.png" />
+                <ion-card-content >
+                  
+                    <ion-card-title>
+                        Tipos de Relaciones
+                    </ion-card-title>
+            
+                    <div class="cardcontent">
+                            Las relaciones ocurren dentro de un amplio espectro: yendo desde sanas, 
+                            malsanas, a abusivas (y pasando por todos los matices entre esas tres categorías).
+                    </div>
+                </ion-card-content>
+
+                  <ion-row class="cardfooter"> 
+                    
+                    <div float-right>
+                        <button (click)="btnVermas(2)" ion-button clear end>
+                            VER MAS
+                       </button>
+                    </div> 
+                  </ion-row>
+            </ion-card>
+        </ion-item>
+    </ion-list>
+    </ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "frontN1More",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

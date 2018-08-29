@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aggression_detail: one
+  name: MyString
+  description: MyText
+
+two:
+  aggression_detail: two
+  name: MyString
+  description: MyText

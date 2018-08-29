@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar color='primary'>
+        <button ion-button menuToggle>
+<ion-icon
+name="menu"></ion-icon>
+</button>
+        <ion-title>Inform&aacute;te</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-list>
+        <ion-list-header>las Relaciones</ion-list-header>
+        <ion-item (click)="goInformateList(6)">El Noviazgo y Tipos de Relaciones</ion-item>
+        <ion-item (click)="goInformateList(7)">Tipos de Abuso y Tipos de Daño</ion-item>
+        <ion-item (click)="goInformateList(8)">Ser o no Ser?</ion-item>
+      </ion-list>
+  
+  
+  <ion-list>
+        <ion-list-header>Obtén Ayuda</ion-list-header>
+        <ion-item (click)="goInformateList(1)">Ayuda Legal</ion-item>
+        <ion-item (click)="goInformateList(2)">Documentando el Abuso</ion-item>
+        <ion-item (click)="goInformateList(3)">Llamar a la Policia </ion-item>
+        <ion-item (click)="goInformateList(4)">Ordenes de Restricción</ion-item>
+        <ion-item (click)="goInformateList(5)">La Ley y las relaciones LGTB</ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aggression detail:</strong>
+  <%= @perpetrator.aggression_detail %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @perpetrator.age %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @perpetrator.name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @perpetrator.gender %>
+</p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @perpetrator.relationship %>
+</p>
+
+<p>
+  <strong>Live together:</strong>
+  <%= @perpetrator.live_together %>
+</p>
+
+<%= link_to 'Edit', edit_perpetrator_path(@perpetrator) %> |
+<%= link_to 'Back', perpetrators_path %>

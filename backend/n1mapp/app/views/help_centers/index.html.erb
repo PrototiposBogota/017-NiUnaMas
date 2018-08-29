@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Help Centers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Phone number</th>
+      <th>Picture</th>
+      <th>Schedule</th>
+      <th>Address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @help_centers.each do |help_center| %>
+      <tr>
+        <td><%= help_center.name %></td>
+        <td><%= help_center.latitude %></td>
+        <td><%= help_center.longitude %></td>
+        <td><%= help_center.phone_number %></td>
+        <td><%= help_center.picture %></td>
+        <td><%= help_center.schedule %></td>
+        <td><%= help_center.address %></td>
+        <td><%= link_to 'Show', help_center %></td>
+        <td><%= link_to 'Edit', edit_help_center_path(help_center) %></td>
+        <td><%= link_to 'Destroy', help_center, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Help Center', new_help_center_path %>

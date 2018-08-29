@@ -1,0 +1,16 @@
+page-home {
+    ion-content {
+        background-image: url('../assets/imgs/girl.jpg');
+        -webkit-background-image: url('../assets/imgs/girl.jpg');
+        background-size: cover;
+    }
+    h2 {
+        padding-top: 80%;
+        color: white;
+        text-align: center;
+    }
+    h3 {
+        color: white;
+        text-align: center;
+    }
+}

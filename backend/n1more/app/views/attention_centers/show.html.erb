@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @attention_center.code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @attention_center.name %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @attention_center.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @attention_center.longitude %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @attention_center.phone_number %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @attention_center.picture %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @attention_center.schedule %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @attention_center.address %>
+</p>
+
+<%= link_to 'Edit', edit_attention_center_path(@attention_center) %> |
+<%= link_to 'Back', attention_centers_path %>

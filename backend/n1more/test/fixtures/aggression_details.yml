@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  victim: one
+  aggression_date: 2018-07-20
+  aggression_time: 2018-07-20 22:59:54
+  mechanism: MyString
+  scene: MyString
+  proof_file: MyText
+  latitude_report: 1.5
+  longitude_report: 1.5
+
+two:
+  victim: two
+  aggression_date: 2018-07-20
+  aggression_time: 2018-07-20 22:59:54
+  mechanism: MyString
+  scene: MyString
+  proof_file: MyText
+  latitude_report: 1.5
+  longitude_report: 1.5

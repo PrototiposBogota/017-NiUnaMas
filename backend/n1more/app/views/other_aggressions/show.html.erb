@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aggression detail:</strong>
+  <%= @other_aggression.aggression_detail %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @other_aggression.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @other_aggression.description %>
+</p>
+
+<%= link_to 'Edit', edit_other_aggression_path(@other_aggression) %> |
+<%= link_to 'Back', other_aggressions_path %>

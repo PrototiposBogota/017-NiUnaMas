@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @help_center.name %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @help_center.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @help_center.longitude %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @help_center.phone_number %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @help_center.picture %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @help_center.schedule %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @help_center.address %>
+</p>
+
+<%= link_to 'Edit', edit_help_center_path(@help_center) %> |
+<%= link_to 'Back', help_centers_path %>
