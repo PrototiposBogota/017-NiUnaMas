@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Info11Page } from '../info11/info11';
-import { LoginPage } from '../login/login';
 import { InformatelistPage } from '../informatelist/informatelist';
-import { Info1Page } from '../info1/info1';
-import { Info2Page } from '../info2/info2';
-import { Info3Page } from '../info3/info3';
-import { Info21Page } from '../info21/info21';
 import { Info31Page } from '../info31/info31';
 import { InfoPage } from '../info/info';
+import { Info4Page } from '../info4/info4';
+import { Info5Page } from '../info5/info5';
+import { Info6Page } from '../info6/info6';
+import { Info7Page } from '../info7/info7';
 
 
 @IonicPage()
@@ -27,13 +26,13 @@ export class InformatePage {
    switch (idpage) {
       case 1:this.navCtrl.push(InfoPage);
        break;
-      case 2:this.navCtrl.push(Info2Page);
+      case 2:this.navCtrl.push(Info4Page);
        break;
-      case 3:this.navCtrl.push(Info3Page);
+      case 3:this.navCtrl.push(Info5Page);
        break;
-      case 4:this.navCtrl.push(Info21Page);
+      case 4:this.navCtrl.push(Info6Page);
        break;
-      case 5:this.navCtrl.push(Info11Page);
+      case 5:this.navCtrl.push(Info7Page);
        break; 
       case 6:this.navCtrl.push(InformatelistPage);
        break; 

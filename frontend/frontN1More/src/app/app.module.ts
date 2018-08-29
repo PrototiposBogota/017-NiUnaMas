@@ -24,6 +24,10 @@ import { LineasAtencionPage } from '../pages/lineas-atencion/lineas-atencion';
 import { ContactenosPage } from '../pages/contactenos/contactenos';
 import { SitiosAtencionPage } from '../pages/sitios-atencion/sitios-atencion';
 import { Info31Page } from '../pages/info31/info31';
+import { Info4Page } from '../pages/info4/info4';
+import { Info5Page } from '../pages/info5/info5';
+import { Info6Page } from '../pages/info6/info6';
+import { Info7Page } from '../pages/info7/info7';
 
 
 @NgModule({
@@ -37,6 +41,10 @@ import { Info31Page } from '../pages/info31/info31';
     Info1Page,
     Info2Page,
     Info3Page,
+    Info4Page,
+    Info5Page,
+    Info6Page,
+    Info7Page,
     Info11Page,
     Info21Page,
     Info31Page,
@@ -46,9 +54,7 @@ import { Info31Page } from '../pages/info31/info31';
     LineasAtencionPage,
     ContactenosPage
 
-    
-
- 
+  
   ],
   imports: [
     BrowserModule,
@@ -65,6 +71,10 @@ import { Info31Page } from '../pages/info31/info31';
     Info1Page,
     Info2Page,
     Info3Page,
+    Info4Page,
+    Info5Page,
+    Info6Page,
+    Info7Page,
     Info11Page,
     Info21Page,
     Info31Page,
@@ -73,9 +83,6 @@ import { Info31Page } from '../pages/info31/info31';
     SitiosAtencionPage,
     LineasAtencionPage,
     ContactenosPage
-
-    
-    
 
 
   ],
