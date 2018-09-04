@@ -28,6 +28,11 @@ import { Info4Page } from '../pages/info4/info4';
 import { Info5Page } from '../pages/info5/info5';
 import { Info6Page } from '../pages/info6/info6';
 import { Info7Page } from '../pages/info7/info7';
+import { Info8Page } from '../pages/info8/info8';
+import { Info9Page } from '../pages/info9/info9';
+import { Info10Page } from '../pages/info10/info10';
+import { Info12Page } from '../pages/info12/info12';
+import { Info13Page } from '../pages/info13/info13';
 
 
 @NgModule({
@@ -45,7 +50,12 @@ import { Info7Page } from '../pages/info7/info7';
     Info5Page,
     Info6Page,
     Info7Page,
+    Info8Page,
+    Info9Page,
+    Info10Page,
     Info11Page,
+    Info12Page,
+    Info13Page,
     Info21Page,
     Info31Page,
     InformatePage,
@@ -75,7 +85,12 @@ import { Info7Page } from '../pages/info7/info7';
     Info5Page,
     Info6Page,
     Info7Page,
+    Info8Page,
+    Info9Page,
+    Info10Page,
     Info11Page,
+    Info12Page,
+    Info13Page,
     Info21Page,
     Info31Page,
     InformatePage,

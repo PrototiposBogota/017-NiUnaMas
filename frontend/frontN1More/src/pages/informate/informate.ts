@@ -8,6 +8,11 @@ import { Info4Page } from '../info4/info4';
 import { Info5Page } from '../info5/info5';
 import { Info6Page } from '../info6/info6';
 import { Info7Page } from '../info7/info7';
+import { Info8Page } from '../info8/info8';
+import { Info9Page } from '../info9/info9';
+import { Info10Page } from '../info10/info10';
+import { Info12Page } from '../info12/info12';
+import { Info13Page } from '../info13/info13';
 
 
 @IonicPage()
@@ -39,6 +44,16 @@ export class InformatePage {
       case 7:this.navCtrl.push(Info31Page);
        break; 
       case 8:this.navCtrl.push(Info11Page);
+       break; 
+      case 9:this.navCtrl.push(Info8Page);
+       break; 
+      case 10:this.navCtrl.push(Info9Page);
+       break; 
+      case 11:this.navCtrl.push(Info10Page);
+       break; 
+      case 12:this.navCtrl.push(Info12Page);
+       break; 
+      case 13:this.navCtrl.push(Info13Page);
        break; 
      default:
        break;
