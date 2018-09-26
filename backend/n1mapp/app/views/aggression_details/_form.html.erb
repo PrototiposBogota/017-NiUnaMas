@@ -1,0 +1,82 @@
+<%= form_with(model: aggression_detail, local: true) do |form| %>
+  <% if aggression_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(aggression_detail.errors.count, "error") %> prohibited this aggression_detail from being saved:</h2>
+
+      <ul>
+      <% aggression_detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perpetrator_name %>
+    <%= form.text_field :perpetrator_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perpetrator_age %>
+    <%= form.number_field :perpetrator_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perpetrator_gender %>
+    <%= form.text_field :perpetrator_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :relatioship %>
+    <%= form.text_field :relatioship %>
+  </div>
+
+  <div class="field">
+    <%= form.label :live_together %>
+    <%= form.check_box :live_together %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aggression_date %>
+    <%= form.date_select :aggression_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aggression_time %>
+    <%= form.time_select :aggression_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mechanism %>
+    <%= form.text_field :mechanism %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scene %>
+    <%= form.text_field :scene %>
+  </div>
+
+  <div class="field">
+    <%= form.label :proof_file %>
+    <%= form.text_area :proof_file %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude_report %>
+    <%= form.text_field :latitude_report %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude_report %>
+    <%= form.text_field :longitude_report %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

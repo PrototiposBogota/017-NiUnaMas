@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Aggression Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Perpetrator name</th>
+      <th>Perpetrator age</th>
+      <th>Perpetrator gender</th>
+      <th>Relatioship</th>
+      <th>Live together</th>
+      <th>Aggression date</th>
+      <th>Aggression time</th>
+      <th>Mechanism</th>
+      <th>Scene</th>
+      <th>Proof file</th>
+      <th>Latitude report</th>
+      <th>Longitude report</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aggression_details.each do |aggression_detail| %>
+      <tr>
+        <td><%= aggression_detail.user %></td>
+        <td><%= aggression_detail.perpetrator_name %></td>
+        <td><%= aggression_detail.perpetrator_age %></td>
+        <td><%= aggression_detail.perpetrator_gender %></td>
+        <td><%= aggression_detail.relatioship %></td>
+        <td><%= aggression_detail.live_together %></td>
+        <td><%= aggression_detail.aggression_date %></td>
+        <td><%= aggression_detail.aggression_time %></td>
+        <td><%= aggression_detail.mechanism %></td>
+        <td><%= aggression_detail.scene %></td>
+        <td><%= aggression_detail.proof_file %></td>
+        <td><%= aggression_detail.latitude_report %></td>
+        <td><%= aggression_detail.longitude_report %></td>
+        <td><%= link_to 'Show', aggression_detail %></td>
+        <td><%= link_to 'Edit', edit_aggression_detail_path(aggression_detail) %></td>
+        <td><%= link_to 'Destroy', aggression_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aggression Detail', new_aggression_detail_path %>

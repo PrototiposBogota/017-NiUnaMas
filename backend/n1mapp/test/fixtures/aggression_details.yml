@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  perpetrator_name: MyString
+  perpetrator_age: 1
+  perpetrator_gender: MyString
+  relatioship: MyString
+  live_together: false
+  aggression_date: 2018-08-21
+  aggression_time: 2018-08-21 22:26:32
+  mechanism: MyString
+  scene: MyString
+  proof_file: MyText
+  latitude_report: 1.5
+  longitude_report: 1.5
+
+two:
+  user: two
+  perpetrator_name: MyString
+  perpetrator_age: 1
+  perpetrator_gender: MyString
+  relatioship: MyString
+  live_together: false
+  aggression_date: 2018-08-21
+  aggression_time: 2018-08-21 22:26:32
+  mechanism: MyString
+  scene: MyString
+  proof_file: MyText
+  latitude_report: 1.5
+  longitude_report: 1.5
