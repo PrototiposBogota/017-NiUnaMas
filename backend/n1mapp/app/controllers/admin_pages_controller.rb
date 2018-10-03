@@ -3,8 +3,8 @@ class AdminPagesController < ApplicationController
     @details = User.get_details
   end
 
-  def index
-    
+  def users_query
+    @users = User.get_users
   end
 
 end

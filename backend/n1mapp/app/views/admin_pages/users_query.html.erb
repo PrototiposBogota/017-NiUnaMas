@@ -1,0 +1,45 @@
+<h1>Listado de usuarios de la app mobil</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido </th>
+      <th>email </th>
+      <th>No. Telefono </th> 
+      <th>Tipo de documento </th> 
+      <th>Documento </th>
+      <th>Identidad de genero</th>
+      <th>Localidad </th>
+      <th>Administrador </th>
+      <th>Persona de confianza </th>
+      <th>No. telefono </th>
+      
+      
+
+      <th colspan="80"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |get_details| %>
+      <tr>
+        <td><%= get_details.name %></td>
+        <td><%= get_details.surname %></td>
+        <td><%= get_details.email %></td>
+        <td><%= get_details.phone_number %></td>
+        <td><%= get_details.document_type %></td>
+        <td><%= get_details.document_number %></td>
+        <td><%= get_details.sexual_orientation %></td>
+        <td><%= get_details.district %></td>
+        <td><%= get_details.admin_user %></td>
+        <td><%= get_details.attendant_name %></td>
+        <td><%= get_details.attendant_phone_number %></td>
+        
+        
+        
+     
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>

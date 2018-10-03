@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
 
   get 'admin_pages/dashboard'
+  get 'admin_pages/users_query'
   get 'static_pages/landing'
  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
