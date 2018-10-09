@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   resources :sexual_aggressions
   resources :other_aggressions
   resources :aggression_details
-  devise_for :users
+  #the next line after the comma instructs devise for use a different controller than the one in the devise gem
+  devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions"}
   #resources :users
   resources :categories
   resources :help_centers

@@ -115,6 +115,10 @@ GEM
       minitest (>= 3.0)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
+    icheck-rails (1.0.2.2)
+      jquery-rails
+      rails (>= 3.1.0)
+      sass-rails
     io-like (0.3.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -267,6 +271,7 @@ DEPENDENCIES
   font-awesome-rails
   guard
   guard-minitest
+  icheck-rails
   jbuilder (~> 2.5)
   jquery-rails
   jwt

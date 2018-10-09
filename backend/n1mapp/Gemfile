@@ -71,4 +71,5 @@ gem 'jwt'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'icheck-rails'
 
