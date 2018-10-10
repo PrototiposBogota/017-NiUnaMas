@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :other_aggressions
   resources :aggression_details
   #the next line after the comma instructs devise for use a different controller than the one in the devise gem
-  devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions"}
+  devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords"}
   #resources :users
   resources :categories
   resources :help_centers
