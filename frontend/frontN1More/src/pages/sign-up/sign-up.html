@@ -22,131 +22,31 @@
 </ion-header>
 
 <ion-content>
+    <ion-list>
 
-    <ion-slides #signupSlider>
+        <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
 
-        <ion-slide>
-            <p *ngIf="submitAttempt" style="color: #ea6153;">Please fill out all details accurately.</p>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
 
-            <ion-list no-lines>
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Password Confirmation</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
 
-                <form [formGroup]="slideOneForm">
-
-                    <ion-item>
-                        <ion-label floating>First Name</ion-label>
-                        <ion-input formControlName="firstName" type="text"></ion-input>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Last Name</ion-label>
-                        <ion-input formControlName="lastName" type="text"></ion-input>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Email</ion-label>
-                        <ion-input formControlName="email" type="text"></ion-input>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label floating>Phone Number</ion-label>
-                        <ion-input formControlName="phonenumber" type="text"></ion-input>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label floating>Pasword</ion-label>
-                        <ion-input formControlName="pasword1" type="text"></ion-input>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label floating>Confirm Pasword</ion-label>
-                        <ion-input formControlName="pasword2" type="text"></ion-input>
-                    </ion-item>
-
-                </form>
-
-            </ion-list>
-
-        </ion-slide>
-
-
-        <ion-slide>
-
-            <br />
-            <ion-list no-lines>
-
-                <form [formGroup]="slideTwoForm">
-
-                    <ion-item>
-                        <ion-label floating>Document type</ion-label>
-                        <ion-select formControlName="documenttype">
-                            <ion-option value="RC" checked="true">Registro civil</ion-option>
-                            <ion-option value="TI">Tarjeta de identidad</ion-option>
-                            <ion-option value="CC">Cedula de ciudadania</ion-option>
-                            <ion-option value="CE">Cedula de extranjeria</ion-option>
-                            <ion-option value="PA">Pasaporte</ion-option>
-                            <ion-option value="MS">Menor sin ID</ion-option>
-                            <ion-option value="AS">Adulto sin ID</ion-option>
-                        </ion-select>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Document Number</ion-label>
-                        <ion-input formControlName="documentnumber" type="text"></ion-input>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Attendant Name</ion-label>
-                        <ion-input formControlName="aname" type="text"></ion-input>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Attendant phone number</ion-label>
-                        <ion-input formControlName="aphone" type="text"></ion-input>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Sexual orientation</ion-label>
-                        <ion-select formControlName="sexualo">
-                            <ion-option value="Femenino" checked="true">Femenino</ion-option>
-                            <ion-option value="Masculino">Masculino</ion-option>
-                            <ion-option value="Transgénero">Transgénero</ion-option>
-                            <ion-option value="Intergénero">Intergénero</ion-option>
-                            <ion-option value="Otro">Otro</ion-option>
-                        </ion-select>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Localidad</ion-label>
-                        <ion-select formControlName="district">
-                            <ion-option value="Chapinero" checked="true">Chapinero</ion-option>
-                            <ion-option value="Usaquén">Usaquén</ion-option>
-                            <ion-option value="Santa fe">Santa fe</ion-option>
-                            <ion-option value="San cristóbal">San Cristóbal</ion-option>
-                            <ion-option value="Usme">Usme</ion-option>
-                            <ion-option value="Tuenjuelito">Tunjuelito</ion-option>
-                            <ion-option value="Bosa">Bosa</ion-option>
-                            <ion-option value="Kennedy">Kennedy</ion-option>
-                            <ion-option value="Fontibón">Fontibón</ion-option>
-                            <ion-option value="Engativa">Engativá</ion-option>
-                            <ion-option value="Suba">Suba</ion-option>
-                            <ion-option value="Barrios Unidos">Barrios Unidos</ion-option>
-                            <ion-option value="Teusaquillo">Teusaquillo</ion-option>
-                            <ion-option value="Los Mártires">Los Mártires</ion-option>
-                            <ion-option value="Antonio Nariño">Antonio Nariño</ion-option>
-                            <ion-option value="Puente Aranda">Puente Aranda</ion-option>
-                            <ion-option value="La Candelaria">La Candelaria</ion-option>
-                            <ion-option value="Rafael Uribe Uribe">Rafael Uribe Uribe</ion-option>
-                            <ion-option value="Ciudad Bolívar">Ciudad Bolívar</ion-option>
-                            <ion-option value="Sumapaz">Sumapaz</ion-option>
-                        </ion-select>
-                    </ion-item>
-
-
-                </form>
-
-            </ion-list>
-
-            <button ion-button full color="primary" (click)="save()">Create Account!</button>
-
-        </ion-slide>
-
-    </ion-slides>
+    </ion-list>
+    <div padding>
+        <button ion-button block color="primary" class="marginTop" (click)="login()">Iniciar sesion</button>
+        <button block ion-button outline>Crear una cuenta</button>
+    </div>
 
 </ion-content>

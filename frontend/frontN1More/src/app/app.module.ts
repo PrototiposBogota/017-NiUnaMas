@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { SignUpPage } from '../pages/sign-up/sign-up';
+import { WelcomePage } from '../pages/welcome/welcome';
 
 import { ReportPage } from '../pages/report/report';
 import { InfoPage } from '../pages/info/info';
@@ -41,6 +42,7 @@ import { Info13Page } from '../pages/info13/info13';
     HomePage,
     LoginPage,
     SignUpPage,
+    WelcomePage,
     ReportPage,
     InfoPage,
     Info1Page,
@@ -76,6 +78,7 @@ import { Info13Page } from '../pages/info13/info13';
     HomePage,
     LoginPage,
     SignUpPage,
+    WelcomePage,
     ReportPage,
     InfoPage,
     Info1Page,
