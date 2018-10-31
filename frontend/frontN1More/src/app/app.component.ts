@@ -17,8 +17,8 @@ import { ContactenosPage } from '../pages/contactenos/contactenos';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  //rootPage: any = HomePage;
-  rootPage: any = WelcomePage;
+  rootPage: any = HomePage;
+  //rootPage: any = WelcomePage;
   
 
   pages: Array<{title: string, component: any}>;

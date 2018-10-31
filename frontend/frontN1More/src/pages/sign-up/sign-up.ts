@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
+import { LoginPage } from '../login/login';
 @Component({
   selector: 'page-sign-up',
   templateUrl: 'sign-up.html'
@@ -25,9 +26,11 @@ export class SignUpPage {
     }
  
     login(){
-        this.navCtrl.push(HomePage);
+        this.navCtrl.push(LoginPage);
     }
   
- 
+    signup(){
+        this.navCtrl.push(HomePage);
+    }
  
 }
